@@ -1,5 +1,5 @@
 //= require_tree ./catarse_wepay
 
-$(function(){
-  app.createViewGetters();
+$(function() {
+  var view = window.wepayForm = new CATARSE.WePayForm();
 });
