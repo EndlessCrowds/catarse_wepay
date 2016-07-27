@@ -1,11 +1,11 @@
 begin
   PaymentEngines.register({
     name: 'wepay',
-    review_path: ->(contribution) {
-      CatarseWepay::Engine.routes.url_helpers.review_wepay_path(contribution)
+    review_path: ->(backer) {
+      CatarseWepay::Engine.routes.url_helpers.review_wepay_path(backer)
     },
-    refund_path: ->(contribution) {
-      CatarseWepay::Engine.routes.url_helpers.refund_wepay_path(contribution)
+    refund_path: ->(backer) {
+      CatarseWepay::Engine.routes.url_helpers.refund_wepay_path(backer)
     },
     locale: 'en'
   })
