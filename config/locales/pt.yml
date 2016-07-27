@@ -1,18 +1,21 @@
 pt:
   projects:
-    contributions:
-      refund:
-        success: 'Pedido de reembolso enviado com sucesso!'
-        error: 'OPS! Ocorreu um erro ao tentar enviar o pedido de reembolso.'
-      review:
-        wepay: 'Pagamento internacional - WePay'
+    backers:
+      wepay:
+        review:
+          title: 'Pagamento internacional - WePay'
+          button: 'Ir para o WePay'
         international:
-          section_title: 'Você será direcionado para o site do WePay para completar o pagamento.'
-          button: 'Ir para o wepay'
-      checkout:
-        wepay_cancel: "Seu pagamento no WePay foi cancelado. Por favor, tente novamente."
-        wepay_description: "Apoio para o projeto %{project_name}"
-        wepay_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o WePay. Por favor, tente novamente."
-        success: "Seu apoio foi realizado com sucesso. Muito obrigado!"
-        wepay_refund_reason: "O cliente mudou de ideia"
+          section_title: 'You will be redirected to the WePay site to complete payment.'
+          user_document_label: 'CPF / CNPJ (only for Brazilians)'
+          button: 'Pay with WePay'
+        checkout:
+          cancel: "Your WePay payment was canceled. Please try again."
+          description: "Back project %{project_name} with %{value} (USD)"
+          error: "Ooops. There was an error while sending your payment to WePay. Please try again."
+          success: "Your back was successfully made. Thanks a lot!"
+        refund:
+          success: 'Pedido de reembolso enviado com sucesso!'
+          error: 'OPS! Ocorreu um erro ao tentar enviar o pedido de reembolso.'
+          refund_reason: "O cliente mudou de ideia"
 
