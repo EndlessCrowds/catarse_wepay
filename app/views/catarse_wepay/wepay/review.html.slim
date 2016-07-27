@@ -1,10 +1,9 @@
 = javascript_include_tag 'catarse_wepay'
-
-h3= t('projects.contributions.review.international.section_title')
-
 #catarse_wepay_form
   = form_tag pay_wepay_path(params[:id]) do
+  	fieldset
+  		legend WePay Information
     .clearfix
     .bootstrap-twitter
       .loader.hide= image_tag 'loading.gif'
-      = submit_tag t('projects.contributions.review.international.button'), :class => 'btn btn-primary btn-large'
+      = submit_tag t('projects.backers.wepay.review.button'), :class => 'btn btn-primary btn-large'
